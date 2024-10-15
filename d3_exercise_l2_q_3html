@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>que 3</title>
+
+    <script>
+        let l=window.prompt("enter length")
+        let b=window.prompt('enter breadth')
+        let area=l*b
+        let peri=2*(l*b)
+        window.alert(`area is : ${area} amd perimeter is ${peri}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
