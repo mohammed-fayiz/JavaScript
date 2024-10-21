@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let nc=window.prompt('enter number of charectors')
+        let nid=window.prompt('enter no. of id s')
+        let userIdGenerator=()=>{
+            let id=''
+            let idSet=''
+            let str='1234567890abcdefghijklmnopqrstuvwxyzABCEFGHIJKLMNOPQRSTUVWXYZ'
+                for(j=0;j<nid;j++)
+                {
+                    for(i=0;i<nc;i++)
+                    {
+                        let r=Math.floor(Math.random()*62)
+                        id+=str[r]
+                    }
+                    idSet+='\n'+id
+                    id=''
+                }
+                return `${idSet}`
+            }
+            console.log(userIdGenerator())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

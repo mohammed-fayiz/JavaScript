@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+
+    <script>
+        let wi=parseInt(window.prompt('enter your weight (in kg)'))
+        let hi=parseFloat(window.prompt('enter your height (in meter)'))
+        let bmi=(w,h)=>w/(h*h)
+        let bm=bmi(wi,hi)
+        if(bm<=18.5)
+        {
+            window.alert('underweight')
+        }
+        else if(bm<=24.9 && bm>18.5)
+        {
+            window.alert('Normal weight')
+        }
+        else if(bm<=29.9 && bm>=25)
+        {
+            window.alert('Overweight')
+        }
+        else{
+            window.alert('nope')
+        }
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
